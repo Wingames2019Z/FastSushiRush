@@ -10,7 +10,7 @@ namespace CryingSnow.FastFoodRush
         [SerializeField] private Button upgradeButton;
         [SerializeField] private TMP_Text priceLabel;
         [SerializeField] private Image[] indicators;
-
+        
         private Color activeColor = new Color(1f, 0.5f, 0.25f, 1f);
 
         void Start()
