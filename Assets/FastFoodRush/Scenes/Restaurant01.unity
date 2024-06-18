@@ -5552,6 +5552,90 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 963194227}
+    - target: {fileID: 7729046859455994718, guid: 9e9a1c38dca83bd4e975d224b97924de, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729046859455994718, guid: 9e9a1c38dca83bd4e975d224b97924de, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729046859455994718, guid: 9e9a1c38dca83bd4e975d224b97924de, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729046859455994718, guid: 9e9a1c38dca83bd4e975d224b97924de, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729046859455994718, guid: 9e9a1c38dca83bd4e975d224b97924de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729046859764616611, guid: 9e9a1c38dca83bd4e975d224b97924de, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729046859764616611, guid: 9e9a1c38dca83bd4e975d224b97924de, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729046859764616611, guid: 9e9a1c38dca83bd4e975d224b97924de, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729046859764616611, guid: 9e9a1c38dca83bd4e975d224b97924de, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729046859764616611, guid: 9e9a1c38dca83bd4e975d224b97924de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729046859769745729, guid: 9e9a1c38dca83bd4e975d224b97924de, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729046859769745729, guid: 9e9a1c38dca83bd4e975d224b97924de, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729046859769745729, guid: 9e9a1c38dca83bd4e975d224b97924de, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729046859769745729, guid: 9e9a1c38dca83bd4e975d224b97924de, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729046859769745729, guid: 9e9a1c38dca83bd4e975d224b97924de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729046860253821559, guid: 9e9a1c38dca83bd4e975d224b97924de, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729046860253821559, guid: 9e9a1c38dca83bd4e975d224b97924de, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729046860253821559, guid: 9e9a1c38dca83bd4e975d224b97924de, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729046860253821559, guid: 9e9a1c38dca83bd4e975d224b97924de, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729046860253821559, guid: 9e9a1c38dca83bd4e975d224b97924de, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7729046860535983760, guid: 9e9a1c38dca83bd4e975d224b97924de, type: 3}
+      propertyPath: backgroundMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: a979b0823baf6ee479eacb07317ff81e, type: 3}
     - target: {fileID: 7729046860535983760, guid: 9e9a1c38dca83bd4e975d224b97924de, type: 3}
       propertyPath: unlockables.Array.data[0]
       value: 
