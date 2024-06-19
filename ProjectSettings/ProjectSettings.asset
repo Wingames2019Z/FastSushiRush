@@ -12,8 +12,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
-  productName: FastSushiRush
+  companyName: bloomstudios
+  productName: SushiRush
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
@@ -164,6 +164,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.cryingsnow.fastfoodrush
+    iPhone: com.bloomstudios.sushirush
   buildNumber:
     Standalone: 0
     VisionOS: 0
@@ -238,7 +239,7 @@ PlayerSettings:
   metalCompileShaderBinary: 0
   iOSRenderExtraFrameOnPause: 0
   iosCopyPluginsCodeInsteadOfSymlink: 0
-  appleDeveloperTeamID: 
+  appleDeveloperTeamID: 96GS257V5N
   iOSManualSigningProvisioningProfileID: 
   tvOSManualSigningProvisioningProfileID: 
   VisionOSManualSigningProvisioningProfileID: 

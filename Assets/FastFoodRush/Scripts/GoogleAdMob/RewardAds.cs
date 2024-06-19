@@ -14,11 +14,11 @@ public class RewardAds : MonoBehaviour
     {
         MobileAds.SetiOSAppPauseOnBackground(true);
 #if UNITY_ANDROID
-        adUnitId = "ca-app-pub-7158360636123601/6373359743";
+        adUnitId = "ca-app-pub-3940256099942544/5224354917";
 #elif UNITY_IPHONE
-        adUnitId = "ca-app-pub-7158360636123601/2075022081";
+        adUnitId = "ca-app-pub-3940256099942544/1712485313";
 #else
-            adUnitId = "unexpected_platform";
+        adUnitId = "unexpected_platform";
 #endif
         LoadAd();
         InitializeCallBack();
