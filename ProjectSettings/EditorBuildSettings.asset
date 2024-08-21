@@ -11,10 +11,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/FastFoodRush/Scenes/Restaurant01.unity
     guid: a6f9077451bdd6849a1f8f954e1ad512
-  - enabled: 1
-    path: Assets/FastFoodRush/Scenes/Restaurant02.unity
-    guid: 1df6e56ca66e6014b8666a182b6c1980
-  - enabled: 1
-    path: Assets/FastFoodRush/Scenes/Restaurant03.unity
-    guid: 43ddfc5686635ac4e82d53862dccff20
   m_configObjects: {}
