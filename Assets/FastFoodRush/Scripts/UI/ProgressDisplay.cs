@@ -16,17 +16,17 @@ namespace CryingSnow.FastFoodRush
             progressText = GetComponentInChildren<TMP_Text>();
         }
 
-        void OnEnable()
-        {
-            RestaurantManager.Instance.OnUnlock += UpdateProgress;
-        }
+        //void OnEnable()
+        //{
+        //    RestaurantManager.Instance.OnUnlock += UpdateProgress;
+        //}
 
-        void OnDisable()
-        {
-            RestaurantManager.Instance.OnUnlock -= UpdateProgress;
-        }
+        //void OnDisable()
+        //{
+        //    RestaurantManager.Instance.OnUnlock -= UpdateProgress;
+        //}
 
-        void UpdateProgress(float progress)
+        public void UpdateProgress(float progress)
         {
             progressFill.color = progressGradient.Evaluate(progress);
             progressFill.fillAmount = progress;

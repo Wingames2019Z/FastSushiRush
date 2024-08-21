@@ -12,7 +12,7 @@ namespace CryingSnow.FastFoodRush
         [SerializeField] private float payingTime = 3f;
         [SerializeField] private Image progressFill;
         [SerializeField] private TMP_Text priceLabel;
-
+        [SerializeField] private ProgressDisplay progressDisplay;
         private long playerMoney => RestaurantManager.Instance.GetMoney();
 
         private Unlockable unlockable;
@@ -34,6 +34,7 @@ namespace CryingSnow.FastFoodRush
             RestaurantManager.Instance.PaidAmount = paidAmount;
 
             progressFill.fillAmount = (float)paidAmount / unlockPrice;
+            progressDisplay.UpdateProgress(progressFill.fillAmount);
             priceLabel.text = RestaurantManager.Instance.GetFormattedMoney(unlockPrice - paidAmount);
         }
 

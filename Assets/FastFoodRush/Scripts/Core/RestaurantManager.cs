@@ -91,6 +91,7 @@ namespace CryingSnow.FastFoodRush
 
         void Start()
         {
+            Debug.Log(Application.persistentDataPath);
             SaveSystem.SaveData<int>(SceneManager.GetActiveScene().buildIndex, "LastSceneIndex");
 
             screenFader.FadeOut();
