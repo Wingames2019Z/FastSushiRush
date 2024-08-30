@@ -143,7 +143,7 @@ namespace SimpleInputNamespace
 		{
             if (Input.touchCount > 1)
             {
-                return;
+                joystickHeld = false;
             }
             joystickHeld = true;
 
@@ -163,7 +163,7 @@ namespace SimpleInputNamespace
         {
             if (Input.touchCount > 1)
             {
-                return;
+                joystickHeld = false;
             }
             Vector2 pointerPos;
 			RectTransformUtility.ScreenPointToLocalPointInRectangle( joystickTR, eventData.position, eventData.pressEventCamera, out pointerPos );
