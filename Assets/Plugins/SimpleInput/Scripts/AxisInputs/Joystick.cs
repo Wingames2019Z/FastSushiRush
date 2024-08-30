@@ -141,7 +141,11 @@ namespace SimpleInputNamespace
 
 		public void OnPointerDown( PointerEventData eventData )
 		{
-			joystickHeld = true;
+            if (Input.touchCount > 1)
+            {
+                return;
+            }
+            joystickHeld = true;
 
 			if( isDynamicJoystick )
 			{
