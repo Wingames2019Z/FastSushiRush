@@ -160,8 +160,12 @@ namespace SimpleInputNamespace
 		}
 
 		public void OnDrag( PointerEventData eventData )
-		{
-			Vector2 pointerPos;
+        {
+            if (Input.touchCount > 1)
+            {
+                return;
+            }
+            Vector2 pointerPos;
 			RectTransformUtility.ScreenPointToLocalPointInRectangle( joystickTR, eventData.position, eventData.pressEventCamera, out pointerPos );
 
 			Vector2 direction = pointerPos - pointerInitialPos;
