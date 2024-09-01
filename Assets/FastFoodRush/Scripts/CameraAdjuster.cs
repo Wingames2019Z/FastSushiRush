@@ -6,44 +6,35 @@ using UnityEngine.UI;
 
 public class CameraAdjuster : MonoBehaviour
 {
-    public Vector2 startPos;
-    public Vector2 mouseStartPos;
-    float dist0 = 0f;
-    float dist1 = 0f;
-    float scale = 0f;
-    float oldDist = 0f;//前回の2点間の距離
-    float minRate = 3f;
-    float maxRate = 20f;
-    float cameraSize = 0f;
+    [SerializeField] float _minRate = 3f;
+    [SerializeField] float _maxRate = 20f;
+    [SerializeField] float _speed = 1f;
+    bool _isZooming = false;
+    int _direction = 1;
     void Update()
     {
-        if (Input.touchCount >= 2)
+        if (_isZooming && Camera.main.orthographicSize >= _minRate  && Camera.main.orthographicSize <= _maxRate)
         {
-            Touch t1 = Input.GetTouch(0);
-            Touch t2 = Input.GetTouch(1);
-            if (t2.phase == TouchPhase.Began)
-            {
-                dist0 = Vector2.Distance(t1.position, t2.position);
-                oldDist = dist0;
-            }
-            else if (t1.phase == TouchPhase.Moved && t2.phase == TouchPhase.Moved)
-            {
-                dist1 = Vector2.Distance(t1.position, t2.position);
-                if (dist0 < 0.001f || dist1 < 0.001f)
-                {
-                    return;
-                }
-                else
-                {
-                    cameraSize = Camera.main.orthographicSize;
-                    scale = cameraSize;
-                    scale += (dist1 - oldDist) / 200f;
-                    if (scale > maxRate) { scale = maxRate; }
-                    if (scale < minRate) { scale = minRate; }
-                    oldDist = dist1;
-                }
-                Camera.main.orthographicSize = scale;
-            }
+            Camera.main.orthographicSize += Time.deltaTime * _direction * _speed;
         }
+
+        if(Camera.main.orthographicSize < _minRate)
+        {
+            Camera.main.orthographicSize = _minRate;
+        }
+        else if (Camera.main.orthographicSize > _maxRate)
+        {
+            Camera.main.orthographicSize = _maxRate;
+        }
+    }
+    public void OnButtonDown(int direction)
+    {
+        _direction = direction;
+        _isZooming = true;
+    }
+    public void OnButtonUp()
+    {
+        _direction = 0;
+        _isZooming = false;
     }
 }
